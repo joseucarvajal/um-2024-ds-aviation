@@ -1,0 +1,4 @@
+NOTA: Este documento no tiene tildes, por el teclado en ingles.
+
+1. Crear un nuevo repositorio con el nombre de su proyecto en GitHub. Ver video explicativo en: https://www.youtube.com/watch?v=i_23KUAEtUM
+2. Crear un branch llamado: uiux y subir un documento (archivo con extension txt que contenga la descripcion de la empresa)
