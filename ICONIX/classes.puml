@@ -1,0 +1,45 @@
+@startuml
+
+class Pasajero {
+    string tipoDeDocumento
+    string documento
+    string nombreCompleto
+    float edad
+}
+
+class Equipaje {
+    float peso
+    float ancho
+    float alto
+    float profundidad
+}
+
+class Origen {
+    string ciudad
+    string codigoAeropuerto
+}
+
+class Destino {
+    string ciudad
+    string codigoAeropuerto
+}
+
+class Vuelo {
+    int hora
+    Date fechaIda
+    Date fechaLlegada
+}
+
+class Reserva {
+    int numeroPasajeros
+    Date fecha
+}
+
+Equipaje -* Pasajero
+Reserva -down-o Vuelo
+Reserva -up-o Origen
+Reserva -o Destino
+Reserva -left-o Pasajero
+
+
+@enduml

@@ -1,0 +1,15 @@
+Agregar pantallazos de UI/UX del sistema
+
+Agregar diagrama de casos de uso
+1. Actores
+2. Casos de uso
+
+Crear diagrama de clases de la empresa que vienen analizando:
+Agregar:
+1. Clases
+2. Atributos y sus tipos
+3. Relaciones
+
+Crear un nuevo branch en GitHub
+- Diagrama de casos de uso
+- Diagrama de clases

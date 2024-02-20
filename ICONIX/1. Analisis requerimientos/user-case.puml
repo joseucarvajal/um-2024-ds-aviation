@@ -1,0 +1,21 @@
+
+@startuml
+
+actor Comprador as comprador
+usecase (Seleccionar fechas salida, llegada) as seleccionarFechas
+
+usecase (Seleccionar Origen, destino) as seleccionarOrigenDestino
+
+usecase (Ingresar datos del vuelo) as ingresarDatosVuelo
+comprador -right-> ingresarDatosVuelo
+
+ingresarDatosVuelo -up-> seleccionarFechas
+ingresarDatosVuelo -> seleccionarOrigenDestino
+
+usecase (Seleccionar equipaje) as seleccionarEquipaje
+comprador -down-> seleccionarEquipaje
+
+usecase (Ingresar datos de los pasajeros) as ingresarDatosPasajeros
+comprador -up-> ingresarDatosPasajeros
+
+@enduml
