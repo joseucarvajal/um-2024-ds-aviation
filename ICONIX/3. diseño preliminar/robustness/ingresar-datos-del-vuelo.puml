@@ -1,0 +1,48 @@
+
+@startuml
+
+actor Comprador as comprador
+boundary "FE Pantalla 'Datos del vuelo'" as fePantallaDatosDelVuelo
+
+comprador -> fePantallaDatosDelVuelo
+
+control "Ingresar fecha salida" as ingresarFechaSalida
+control "Ingresar fecha regreso" as ingresarFechaRegreso
+
+fePantallaDatosDelVuelo -up-> ingresarFechaSalida
+fePantallaDatosDelVuelo -> ingresarFechaRegreso
+
+control "Validar fechas (regreso posterior a salida)" as validarFechas
+
+ingresarFechaSalida -right-> validarFechas
+ingresarFechaRegreso -up-> validarFechas
+
+boundary "Mostrar error" as error
+
+note "NO es valido" as noteNoEsValido
+
+validarFechas -> error 
+
+error .. noteNoEsValido
+
+
+boundary origen as origen
+
+control "BE obtener ciudades" as beObtenerCiudades
+
+fePantallaDatosDelVuelo --> beObtenerCiudades
+
+entity ciudades as entityCiudades
+
+entityCiudades -> beObtenerCiudades
+
+boundary "FE Origen" as feOrigen
+boundary "FE Destino" as feDestino
+
+beObtenerCiudades -> feOrigen
+beObtenerCiudades -down-> feDestino
+
+
+usecase " "
+
+@enduml
