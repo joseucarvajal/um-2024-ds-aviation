@@ -19,11 +19,7 @@ ingresarFechaRegreso -up-> validarFechas
 
 boundary "Mostrar error" as error
 
-note "NO es valido" as noteNoEsValido
-
-validarFechas -> error 
-
-error .. noteNoEsValido
+validarFechas -up-> error: Mostrar error
 
 
 boundary origen as origen
@@ -43,6 +39,25 @@ beObtenerCiudades -> feOrigen
 beObtenerCiudades -down-> feDestino
 
 
+boundary "Cambiar cantidad pasajeros" as feCambiarCantidadPasajeros
+
+fePantallaDatosDelVuelo -> feCambiarCantidadPasajeros
+
+control "Clic en Boton 'Siguiente'" as botonSiguiente
+
+fePantallaDatosDelVuelo -> botonSiguiente
+
+control "Guardar datos del vuelo" as guardarDatosVuelo
+
+botonSiguiente -> guardarDatosVuelo
+
+usecase (Seleccionar equipaje) as seleccionarEquipaje
+
+guardarDatosVuelo -down-> seleccionarEquipaje
 usecase " "
+
+entity datos_del_vuelo as entityDatosDelVuelo
+
+guardarDatosVuelo -> entityDatosDelVuelo
 
 @enduml

@@ -1,0 +1,9 @@
+Parametros de entrega:
+
+1. Realizar al menos 3 diagramas de Robustez para su proyecto de empresa. Cada diagrama debe ir 
+en su propio archivo UML
+2. Fecha de entrega maxima: Lunes 18 de marzo, 6:00 de la tarde en GitHub
+3. Deben tener en cuenta las pautas descritas en el archivo: importante/diagrama-robustez.txt
+4. Se deben exportar los diagramas a imagenes de tal forma que estas imagenes se puedan ver
+en GitHub junto con el codigo UML.
+

@@ -1,0 +1,18 @@
+Jueves 14 de Marzo:
+1. Los simbolos "controlador" (flecha encima), deben indicar acciones y estar expresados en verbos.
+2. En el diagrama de robustez, las redirecciones o cambios de una pantalla a otra, se deben especificar
+utilizando un caso de uso que indique a cual pantalla se debe ir.
+3. Cada vez que se necesiten guardar datos, se debe especificar con el simbolo de "entidad" (bolita con rayita abajo) el nombre
+de la entidad en la que se van a guardar los datos. (ejemplo: Revisar el control en "Guardar datos del vuelo" 
+en: "ICONIX/3. diseño preliminar/robustness/ingresar-datos-del-vuelo.puml", en este caso la entidad es: "datos_del_vuelo")
+4. Cada vez que se necesiten leer datos, se debe especificar con el simbolo de "entidad" (bolita con rayita abajo) el nombre
+de la entidad en la que se van a guardar los datos.
+(ejemplo: Revisar el control en "BE obtener ciudades" 
+en: "ICONIX/3. diseño preliminar/robustness/ingresar-datos-del-vuelo.puml", en este caso la entidad es "ciudades")
+
+Para los puntos anteriores, revisar el ejemplo: ICONIX/3. diseño preliminar/robustness/ingresar-datos-del-vuelo.puml
+
+Los diagramas de robustez deben respetar estas normas y crearse de esta manera
+en sus proyectos de sustentacion.
+
+
